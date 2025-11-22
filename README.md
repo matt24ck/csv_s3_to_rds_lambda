@@ -2,6 +2,16 @@
 
 # CSV Migration from S3 bucket to PostgreSQL database with AWS Lambda
 
+## Order of Operations
+1. Create Lambda function and upload .zip file.
+2. Create exceution role in IAM and create permissions: S3 access, VPC access, SNS access.
+3. Add VPC to Lambda, using security groups from RDS database.
+4. Connect Lambda to RDS and vice versa.
+5. Create VPC endpoint for S3.
+6. Create VPC endpoint for SNS.
+7. Test Lambda function.
+8. Create trigger.
+
 ### S3 Bucket
 * Create a VPC endpoint for the bucket that contains the CSV files.
 

@@ -164,7 +164,24 @@ Set Environment Variables:
 |PG_PORT|Port (5432)|
 |SNS_TOPIC_ARN| ARN of SNS topic|
 
+Create test case for Lambda function:
 
+```json
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "your-bucket-name"
+        },
+        "object": {
+          "key": "path/to/your-file.csv"
+        }
+      }
+    }
+  ]
+}
+```
 
 Create an execution role on the IAM console: AWS Service > Lambda
 

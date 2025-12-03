@@ -238,5 +238,20 @@ Grant a new inline policy for execution role:
 }
 
 ```
-
+```json
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "data-storage-tailevaluation"
+        },
+        "object": {
+          "key": "prsa/psra-comm-lease-01062025-060016.csv"
+        }
+      }
+    }
+  ]
+}
+```
 
